@@ -13,11 +13,16 @@ $colors: (
 );
 
 // Color Variables
-@each $key, $color in $colors {
-    :root {
+:root {
+    @each $key, $color in $colors {
         --color-#{$key}: #{$color};
     }
 }
+// @each $key, $color in $colors {
+//     :root {
+//         --color-#{$key}: #{$color};
+//     }
+// }
 
 // Text colors
 @each $key, $color in $colors {
