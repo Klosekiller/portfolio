@@ -1,0 +1,30 @@
+$colors: (
+    slate-gray: #65747b,
+    steel-blue: #4c5e67,
+    charcoal-blue: #334753,
+    midnight-green: #1a313f,
+    deep-teal: #0d2635,
+    dark-cyan: #072030,
+    navy-blue: #001a2a,
+    oxford-blue: #001420,
+    rich-black: #000d15,
+    black: #000000,
+    transparant: rgba(0, 0, 0, 0)
+);
+
+// Color Variables
+@each $key, $color in $colors {
+    :root {
+        --color-#{$key}: #{$color};
+    }
+}
+
+// Text colors
+@each $key, $color in $colors {
+    .text-#{$key} {color: $color};
+}
+
+// Background colors
+@each $key, $color in $colors {
+    .bg-#{$key} {background-color: $color};
+}
