@@ -10,12 +10,15 @@
   list-style: none;
   text-align: center;
   background-color: var(--color-transparant);
+  color: var(--color-white);
 }
 .header-nav-ul-li:hover {
   background-color: var(--color-slate-gray);
+  color: var(--color-oxford-blue);
 }
 
 :root {
+  --color-white: white;
   --color-slate-gray: #65747b;
   --color-steel-blue: #4c5e67;
   --color-charcoal-blue: #334753;
@@ -27,6 +30,10 @@
   --color-rich-black: #000d15;
   --color-black: #000000;
   --color-transparant: rgba(0, 0, 0, 0);
+}
+
+.text-white {
+  color: white;
 }
 
 .text-slate-gray {
@@ -71,6 +78,10 @@
 
 .text-transparant {
   color: rgba(0, 0, 0, 0);
+}
+
+.bg-white {
+  background-color: white;
 }
 
 .bg-slate-gray {

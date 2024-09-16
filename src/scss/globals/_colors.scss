@@ -1,4 +1,5 @@
 $colors: (
+    white: white,
     slate-gray: #65747b,
     steel-blue: #4c5e67,
     charcoal-blue: #334753,
@@ -18,11 +19,6 @@ $colors: (
         --color-#{$key}: #{$color};
     }
 }
-// @each $key, $color in $colors {
-//     :root {
-//         --color-#{$key}: #{$color};
-//     }
-// }
 
 // Text colors
 @each $key, $color in $colors {
